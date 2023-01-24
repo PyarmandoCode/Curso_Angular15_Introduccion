@@ -1,0 +1,170 @@
+  html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #F3F3F3;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1 {
+    padding-top: 60px;  
+  }
+  
+
+  
+  /* MAIN CONTIANER */
+  .main-container {
+    padding: 50px;
+  }
+  
+  .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+  }
+  
+  .box a {
+    transition: transform .3s;  
+  }
+  
+  .box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);  
+    transform: scale(1.4);
+  }
+  
+  .box img {
+    border-radius: 2px;
+  }
+  
+ 
+  
+  /* MEDIA QUERIES */
+  
+  @media(max-width: 900px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+  
+  }
+  
+  @media(max-width: 700px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+  
+    .sub-links ul {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+     
+  }
+  
+  @media(max-width: 500px) {
+  
+    .wrapper {
+      font-size: 15px;
+    }
+  
+    header {
+      margin: 0;
+      padding: 20px 0 0 0;
+      position: static;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: 
+      "nt"    
+      "mn"
+      "sb";
+      text-align: center;
+    }
+  
+    .netflixLogo {
+      max-width: 100%;
+      margin: auto;
+      padding-right: 20px;
+    }
+  
+    .main-nav {
+      display: grid;
+      grid-gap: 0px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 18px;
+    }
+  
+   
+  
+    .box {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;    
+    }
+  
+    .box a:hover {
+      transition: transform .3s;
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);  
+      transform: scale(1.2);
+    }
+  
+    .logos {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  
+    .sub-links ul {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    
+  
+    
+     
+  }

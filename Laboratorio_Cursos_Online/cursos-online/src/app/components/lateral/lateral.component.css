@@ -1,0 +1,39 @@
+.column {
+    float:left;
+    padding: 15px;
+}
+
+.sidemenu{
+    width: 25%;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.sidemenu li a{
+    color:#666;
+    padding:8px;
+    display:block;
+    margin-bottom: 4px;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.sidemenu li a:hover {
+    background-color: #008cba;
+    color: white;
+}
+
+.sidemenu li a.active {
+    background-color: #008cba;
+    color: white;
+}
+
+.clearfix::after {
+    clear:both;
+    content:"";
+    display:table-row;
+}

@@ -1,0 +1,49 @@
+ /* HEADER */
+ header {
+    padding: 20px 20px 0 20px;
+    position: fixed;
+    top: 0;
+    display: grid;  
+    grid-gap:5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     "nt mn mn sb . . . "; 
+    background-color: #141414;
+    width: 100%;
+    margin-bottom: 0px;  
+  }
+
+
+
+  .main-nav {
+    grid-area: mn;
+    padding: 0 30px 0 20px;
+  }
+  
+  .main-nav a {
+    color: #F3F3F3;
+    text-decoration: none;
+    margin: 5px;  
+  }
+  
+  .main-nav a:hover {
+    color: #686868;
+  }
+  
+  .sub-nav {
+    grid-area: sb;
+    padding: 0 40px 0 40px;
+  }
+  
+  .sub-nav a {
+    color: #F3F3F3;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .sub-nav a:hover {
+    color: #686868;
+  }
+  
+
+  

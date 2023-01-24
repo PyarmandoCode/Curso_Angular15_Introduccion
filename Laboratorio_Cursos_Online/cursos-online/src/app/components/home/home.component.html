@@ -1,0 +1,29 @@
+<div class="column content">
+    <div class="header">
+      <h1>Curso de Angular 15</h1>
+   </div>
+   <h2>Curso en Formato de Videos</h2>
+    
+    <p>Esta es Una Pequeña Descripcion del Curso</p>
+</div>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+
+            <div *ngFor="let item of ArregloCursos" class="col-md-6 col-l6-4">
+            
+                <div class="card mx-30">
+                    <img src="{{item.imagen}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.titulo}}</h5>
+                        <h6>{{item.subtitulo}}</h6>
+                        <p align="justify">{{item.descripcion}}</p>
+                        <button type="button" class="btn btn-danger">Reproducir</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
