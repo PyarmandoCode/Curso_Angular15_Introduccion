@@ -1,0 +1,22 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <h1 class="text-center text-primary">Lista de Tareas Diarias</h1>
+       <div class="input-group-prepend">
+        <input type="text" #todo class="form-control" placeholder="Agregar Tarea" (keyup.enter)="addtodo(todo.value)">
+        <span class="input-group-text" (click)="addtodo(todo.value)">add</span>
+       </div>
+    </div>
+
+    <div class="data">
+      <ul class="list-instyled">
+        <li *ngFor="let item of mistareas" [class.done]="item.estado=='completado'">{{item.tarea}}
+          <i (click)="deleteitem(item.tarea)" class="material-icons">delete</i>
+          <i (click)="completeitem(item.tarea)" class="material-icons">done</i>
+       </li>
+      </ul>
+    </div>
+
+  </form>
+
+</div>

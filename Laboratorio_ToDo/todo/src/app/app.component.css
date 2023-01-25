@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    max-width: 30em;
+    margin: 4em auto;
+    position: relative;
+    background-color:#f4f4f4;
+    padding: 2em 3em;
+    overflow: hidden;
+}
+
+form h1 {
+    color:#f97300 !important;
+    font-family: "Raleway";
+}
+
+form input[type=text]::placeholder {
+    color:#666;
+    font-family: "Raleway";
+}
+
+form .input-group-text {
+    background-color: #f97300;
+    border-radius: 50px;
+    width: 5em;
+    height: 5em;
+    padding: 1em 23px;
+    position: absolute;
+    right: 13px;
+    top:78px;
+    cursor: pointer;
+    color: #fff;
+}
+
+form .input-group-text i {
+    font-size: 2em;
+}
+
+form .data {
+    margin-top: 1em;
+}
+
+form .data li {
+    border: 2px solid #f97300;
+    padding: 1em;
+    color: #666;
+    margin: 1em auto;
+    font-family: "Raleway";
+}
+
+.done {
+    text-decoration: line-through;
+
+}
