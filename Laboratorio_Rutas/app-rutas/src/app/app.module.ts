@@ -10,6 +10,7 @@ import { Pagina3Component } from './components/pagina3/pagina3.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { Pagina4Component } from './components/pagina4/pagina4.component';
+import { OrigenComponent } from './components/origen/origen.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Pagina4Component } from './components/pagina4/pagina4.component';
     Pagina3Component,
     LoginComponent,
     PagenotfoundComponent,
-    Pagina4Component
+    Pagina4Component,
+    OrigenComponent
   ],
   imports: [
     BrowserModule,
