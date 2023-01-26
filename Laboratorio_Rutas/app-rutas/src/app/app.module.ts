@@ -12,6 +12,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { Pagina4Component } from './components/pagina4/pagina4.component';
 import { OrigenComponent } from './components/origen/origen.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { OrigenComponent } from './components/origen/origen.component';
     LoginComponent,
     PagenotfoundComponent,
     Pagina4Component,
-    OrigenComponent
+    OrigenComponent,
+    
   ],
   imports: [
     BrowserModule,

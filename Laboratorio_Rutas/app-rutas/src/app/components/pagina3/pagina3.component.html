@@ -1,1 +1,28 @@
-<p>Bienvenido a la pagina 3</p>
+<div class="container">
+    <table class="table" *ngIf="listadodiscos.length>0">
+        <thead>
+            <th>Nro</th>
+            <th>Disco</th>
+            <th>Estado</th>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let discos of listadodiscos;let i=index" [ngSwitch]="discos.estado">
+                <td>{{i+1}}</td>
+                <td>{{discos.nombre}}</td>
+                <!-- <td [ngStyle]="{'font-style':'italic'}">{{discos.estado}}</td> -->
+                <!-- <td [ngStyle]="{'font-style':discos.estado=='Activo' ? 'italic':'normal'}">{{discos.estado}}</td> -->
+                <!-- <td>
+                    <span [ngClass]="discos.estado=='Activo' ? 'badge bg bg-success':'badge bg bg-secondary'">{{discos.estado}}</span>
+                </td> -->
+                <td>
+                    <span *ngSwitchCase="'Activo'" class="badge bg-success">{{discos.estado}}</span>
+                    <span *ngSwitchCase="'Inactivo'" class="badge bg-secondary">{{discos.estado}}</span>
+                    <span *ngSwitchCase="'Suspendido'" class="badge bg-danger">{{discos.estado}}</span>
+                    <span *ngSwitchDefault class="badge bg-danger">{{discos.estado}}</span>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>

@@ -7,8 +7,9 @@ import { LoginComponent } from './components/login/login.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { Pagina4Component } from './components/pagina4/pagina4.component';
 
+
 const routes: Routes = [
-  {path:'',redirectTo:'/login',pathMatch:'full'},
+  {path:'',component:LoginComponent},
   {path:'login',component:LoginComponent},
   {path:'pagina1',component:Pagina1Component},
   {path:'pagina2',component:Pagina2Component},

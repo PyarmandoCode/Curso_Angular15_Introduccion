@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class Pagina3Component {
 
+  listadodiscos:any[]=[
+    {nombre:"disco1",estado:"Activo"},
+    {nombre:"disco2",estado:"Inactivo"},
+    {nombre:"disco3",estado:"Suspendido"},
+    {nombre:"disco4",estado:"Activo"},
+    {nombre:"disco5",estado:"Inactivo"},
+    {nombre:"disco6",estado:"Suspendido"},
+    
+  ]
+
 }
