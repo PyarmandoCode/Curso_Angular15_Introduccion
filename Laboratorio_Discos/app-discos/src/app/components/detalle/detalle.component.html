@@ -1,0 +1,35 @@
+<section style="background-color:#eee" *ngFor="let disco of infodisco;let i=index;" >
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-lx-4" >
+                <div class="card text-black">
+                    <img src="{{disco.imagen}}" class="card-img-top">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h5 class="card-title">{{disco.nombre}}</h5>
+                            <p clss="text-muted mb-4"><b>Codigo Almacen:</b>{{disco.codigo}}</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Precio</span><span>{{disco.precio}}</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Cantidad</span><span>{{disco.cantidad}}</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Estado</span><span>{{disco.estado}}</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-success" (click)="irpaginaproductos()">Volver</button>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+     
+    </div>
+
+</section>

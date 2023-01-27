@@ -1,0 +1,26 @@
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <td>Nro</td>
+            <td>Tapa</td>
+            <td>Disco</td>
+            <td>Stock</td>
+            <td>Estado</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let discos of listadodiscos;let i=index" [ngSwitch]="discos.estado">
+                <td>{{i+1}}</td>
+                <td><img src="{{discos.imagen}}" height="80" width="90"></td>
+                <td><a routerLink="/detailproducto/{{discos.codigo}}">{{discos.nombre}}</a></td>
+                <td>{{discos.cantidad}}</td>
+                <td>
+                    <span *ngSwitchCase="'Activo'" class="badge bg-success">{{discos.estado}}</span>
+                    <span *ngSwitchCase="'Inactivo'" class="badge bg-secondary">{{discos.estado}}</span>
+                    <span *ngSwitchCase="'Suspendido'" class="badge bg-danger">{{discos.estado}}</span>
+                    <span *ngSwitchDefault class="badge bg-danger">{{discos.estado}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
