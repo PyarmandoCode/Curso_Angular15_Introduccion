@@ -1,0 +1,12 @@
+<div class="app">
+    <h1>Listado de Peliculas</h1>
+    <div class="search">
+        <input type="text" #search placeholder="Buscar Pelicula">
+        <img (click)="getMovies(search.value)" src="../../../assets/search.svg" alt="search">
+    </div>
+    <div class="container">
+        <app-cardmovie></app-cardmovie>
+
+    </div>
+
+</div>
