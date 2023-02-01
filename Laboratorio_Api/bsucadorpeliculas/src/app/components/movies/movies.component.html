@@ -1,0 +1,17 @@
+<div class="app">
+    <h1>Buscador de Peliculas</h1>
+    <div class="search">
+        <input type="text" #search placeholder="Buscar Pelicula">
+        <img (click)="getMovies(search.value)" src="../../../assets/search.svg" alt="search" >
+   </div>
+   <!-- <div class="container">
+        <app-cardmovie *ngFor="let moviee of movies" [movie]="moviee"></app-cardmovie>
+   </div> -->
+
+    <div *ngIf="movies.length > 0; else empty" class="container">
+      <app-cardmovie *ngFor="let moviee of movies" [movie]="moviee"></app-cardmovie>
+    </div>
+    <ng-template #empty class="empty">
+        <h3>No Se Encontraron Peliculas!!</h3>
+    </ng-template>
+</div>

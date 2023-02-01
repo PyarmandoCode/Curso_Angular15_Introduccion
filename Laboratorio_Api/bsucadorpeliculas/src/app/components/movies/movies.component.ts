@@ -7,15 +7,21 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  
-  constructor(private movieService:MovieService) {}
+  movies:any[]=[];
+
+  constructor(private movieService:MovieService) { }
+
   ngOnInit(): void {
-    
   }
-  //Nos Susbcribimos para obtener los datos del servicio
+
+  //Nos Suscribimos para obtener los datos del Observable
   getMovies(searchTerm:string) {
     this.movieService.getMovies(searchTerm).subscribe(data => {
-      console.log(data);
+      if (data.Response =='False') {
+        this.movies=[];
+      }else {
+        this.movies=data.Search;
+      }
     })
   }
 
